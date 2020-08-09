@@ -1,0 +1,45 @@
+﻿body {
+    background: url(https://i.gifer.com/7HHu.gif);
+    background-size: cover;
+}
+
+.text {
+    text-align: center;
+}
+
+a.btn {
+    display: inline-block;
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border: 1px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+    font-size: 10px;
+    width: auto;
+}
+
+    a.btn:hover {
+        background: rgba(255,255,255,.2);
+    }
+
+    a.btn:active {
+        background: white;
+    }
+
+input {
+    display: inline-block;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    border: 1px solid;
+    border-radius: 1px;
+    transition: 0.2s;
+    font-size: 11px;
+}
