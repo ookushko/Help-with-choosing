@@ -4,36 +4,40 @@
     <meta charset="utf-8" />
     <title>HWC</title>
     <link href="style.css" rel="stylesheet" />
+    <script type="text/javascript"> /* Добавление строки в таблице с помощью DOM javascript */
+        function addRow(id) {
+            var str = document.getElementById("textbox").value;
+            if (str != "") {
+                var tbody = document.getElementById(id).getElementsByTagName("TBODY")[0];
+                var row = document.createElement("TR");
+                var td = document.createElement("TD");
+                td.appendChild(document.createTextNode(str));
+                row.appendChild(td);
+                tbody.appendChild(row);
+            }
+        }
+    </script>
+
 </head>
 <body>
     <div class="text">
         <h2>Помощь в принятии решения</h2>
         <p>
-            <a href="#" class="btn">+</a>
-            <input value="Введите +/-" />
-            <a href="#" class="btn">-</a>
+            <a href="javascript://" onclick="addRow('plus');return false;" class="btn">+</a>
+            <input id="textbox" value="Введите +/-" />
+            <a href="javascript://" onclick="addRow('minus');return false;" class="btn">-</a>
         </p>
     </div>
 
-    <table style="float: left" border="1">
+    <table id="plus" style="float: left">
         <tr>
             <th>Плюсы</th>
         </tr>
-
-        <tr><td>• Example 1</td></tr>
-        <tr><td>• Example 2</td></tr>
-        <tr><td>• Example 3</td></tr>
-        <tr><td>• Example 4</td></tr>
-
     </table>
-    <table style="float: right" border="1">
+    <table id="minus" style="float: right">
         <tr>
             <th>Минусы</th>
         </tr>
-        <tr><td>• Example 1</td></tr>
-        <tr><td>• Example 2</td></tr>
-        <tr><td>• Example 3</td></tr>
-
     </table>
 </body>
 </html>
