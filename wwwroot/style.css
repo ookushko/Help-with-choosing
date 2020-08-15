@@ -1,15 +1,16 @@
 ﻿body {
-    background: url(https://i.gifer.com/7HHu.gif);
+    background: url(https://media0.giphy.com/media/dAWZiSMbMvObDWP3aA/giphy.gif);
     background-size: cover;
 }
 
 .text {
     text-align: center;
+    text-shadow: 1px 1px 1px black;
     font-size: 24px;
+    color: white;
 }
 
 a.btn {
-    /*display: inline-block;*/
     color: white;
     font-weight: 900;
     text-decoration: none;
@@ -19,7 +20,7 @@ a.btn {
     border: 2px solid;
     border-radius: 10px;
     transition: 0.2s;
-    font-size: 10px;
+    font-size: 12px;
     width: auto;
     box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.50);
 }
@@ -41,21 +42,16 @@ input {
     padding: .5em 2em;
     outline: none;
     border: 1px solid;
-    border-radius: 1px;
     transition: 0.2s;
-    font-size: 11px;
     border-radius: 10px;
 }
 
 table {
-    width: 49.5%; /* Ширина таблицы */
-    color: white; /* Цвет текста */
+    width: 49.5%;
+    color: white;
     text-align: center;
     text-shadow: 1px 1px 1px black;
     font-size: 20px;
-    /*border-spacing: 5px; Расстояние между ячейками */
-    /*border: groove;*/
-    /*border-collapse: separate;*/
     border-collapse: collapse;
     border-radius: 20px;
     box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.50);

@@ -20,7 +20,6 @@ namespace HelpWithChoosing
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            //app.UseDirectoryBrowser();
             app.UseDefaultFiles();
             app.UseStaticFiles();
         }
